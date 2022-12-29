@@ -13,20 +13,32 @@
 }
 
 body {
-  height: 125vh;
-  background: linear-gradient(45deg, #190361, #bb00ff, #FF7000);
+  height: 100%;
+  background: linear-gradient(45deg, #190361, #bb00ff, #ff7000);
   background-size: 200% 200%; /*200 em largura e 200 em altura*/
   display: grid;
   place-items: center;
   text-align: center;
 
   animation: colors 10s ease infinite;
+
+
 }
 
 main {
+  height: 100vh;
+  margin: 2rem auto 4rem;
+
+}
+
+div {
   background: #ffffff;
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
   border-radius: 5px;
+}
+
+div #flex {
+  box-shadow: none;
 }
 
 body,
@@ -38,8 +50,11 @@ button {
 /* Primeira tela */
 
 .screen1 {
-  margin-top: -10rem;
+  margin: 5rem auto 0;
   padding: 4.8rem 6.4rem 6rem;
+
+  width: min(40rem, 95%);
+
 }
 
 h1 {
@@ -76,10 +91,9 @@ p {
 /* Segunda Tela*/
 
 .screen2 {
-  margin-top: -8rem;
   width: min(42rem, 90%);
-  /* height: min(56rem, 90%); */
   padding: 4.8rem 6.4rem;
+  margin: 0 auto;
 }
 
 .screen2 h1 {
@@ -135,7 +149,7 @@ p {
 }
 
 #btnAgain:hover {
-  background: linear-gradient(45deg, #190361, #bb00ff, #FF7000);
+  background: linear-gradient(45deg, #190361, #bb00ff, #ff7000);
   background-size: 200% 200%;
 }
 
@@ -200,13 +214,13 @@ p {
 }
 
 @keyframes colors {
-	0% {
-		background-position: 0% 100%;
-	}
-	50% {
-		background-position: 100% 0%;
-	}
-	100% {
-		background-position: 0% 100%;
-	}
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
 }
